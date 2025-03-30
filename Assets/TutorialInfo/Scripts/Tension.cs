@@ -9,8 +9,7 @@ public class Tension : MonoBehaviour
         acc = 5f;
         tension = mass * (Physics.gravity.y + acc);
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         GetComponent<Rigidbody>().AddForce(0, tension, 0);
