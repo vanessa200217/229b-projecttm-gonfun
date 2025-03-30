@@ -7,7 +7,6 @@ public class CoinRotation : MonoBehaviour
 
     void Update()
     {
-        // หมุนเหรียญ
         transform.Rotate(rotationAxis * rotationSpeed * Time.deltaTime);
     }
 }

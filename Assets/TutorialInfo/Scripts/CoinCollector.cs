@@ -1,10 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CoinCollector : MonoBehaviour
 {
     private int score = 0;
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
 
     void OnTriggerEnter(Collider other)
     {
