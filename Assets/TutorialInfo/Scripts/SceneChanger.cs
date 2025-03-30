@@ -3,8 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public void ChangeSceneToScene2()
+    public string nextSceneName;
+
+    void Update()
     {
-        SceneManager.LoadScene("map ice");
+        if (transform.position.y < -10f)
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
     }
 }
